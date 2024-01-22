@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://dftohix3l7sct"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_anojw"]
+[ext_resource type="Texture2D" uid="uid://cr26jgvrl2olv" path="res://image/1 ending.jpg" id="2_d27hh"]
+[ext_resource type="AudioStream" uid="uid://cnjsj6fn88mii" path="res://sounds and music/719496__audiocoffee__summer-every-day-loop.wav" id="3_0pbin"]
+
+[node name="1 ending" type="CanvasLayer"]
+script = ExtResource("1_anojw")
+
+[node name="1Ending" type="Sprite2D" parent="."]
+position = Vector2(512, 509.5)
+scale = Vector2(1.00977, 1.0166)
+texture = ExtResource("2_d27hh")
+
+[node name="come back" type="Button" parent="1Ending"]
+modulate = Color(1, 0.0705882, 0.0705882, 1)
+offset_left = -102.004
+offset_top = 460.849
+offset_right = 44.9961
+offset_bottom = 491.849
+text = "Вернуться назад"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="1Ending"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -856.634
+offset_top = -112.138
+offset_right = -154.634
+offset_bottom = -60.1384
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="1Ending/VBoxContainer"]
+layout_mode = 2
+text = "Вы ушли от этого странного места и в всё что могло произойти обошло вас стороной.
+1 концовка."
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_0pbin")
+volume_db = -17.334
+autoplay = true
+
+[connection signal="pressed" from="1Ending/come back" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="1Ending/come back" to="." method="_on_come_back_pressed"]

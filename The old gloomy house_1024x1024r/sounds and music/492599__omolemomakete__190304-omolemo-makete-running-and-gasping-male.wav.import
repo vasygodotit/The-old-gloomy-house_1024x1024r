@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cna3wck3p3rh5"
+path="res://.godot/imported/492599__omolemomakete__190304-omolemo-makete-running-and-gasping-male.wav-62c2ea51e54af9a41a48b8818b766d51.sample"
+
+[deps]
+
+source_file="res://sounds and music/492599__omolemomakete__190304-omolemo-makete-running-and-gasping-male.wav"
+dest_files=["res://.godot/imported/492599__omolemomakete__190304-omolemo-makete-running-and-gasping-male.wav-62c2ea51e54af9a41a48b8818b766d51.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

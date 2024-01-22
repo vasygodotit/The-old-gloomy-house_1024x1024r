@@ -1,0 +1,55 @@
+[gd_scene load_steps=4 format=3 uid="uid://sve4uavj8gee"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_wug8k"]
+[ext_resource type="Texture2D" uid="uid://caslr28aoplmg" path="res://image/3 ending.jpg" id="2_1gcl4"]
+[ext_resource type="AudioStream" uid="uid://ds5rrd3u25rg1" path="res://sounds and music/719620__davejf__quiet-music.mp3" id="3_fay0t"]
+
+[node name="3 ending" type="CanvasLayer"]
+script = ExtResource("1_wug8k")
+
+[node name="3Ending" type="Sprite2D" parent="."]
+position = Vector2(513.5, 512.5)
+scale = Vector2(1.0166, 1.01855)
+texture = ExtResource("2_1gcl4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="3Ending"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1009.81
+offset_top = -329.728
+offset_right = 76.1941
+offset_bottom = -43.728
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="3Ending/VBoxContainer"]
+layout_mode = 2
+text = "Вы делаете всё в точности так как говорит девушка,
+ после того как вы подожгли картину барона он вылетел из неё горящий и злой,
+ но прочитав заклинание вы видите как его дух взорвался откинув вас,
+ вы ударевшись об стену теряете сознание, приходя в себя вы видите что картин больше нету, 
+вы хватаете книгу и бежите в комнату рассказать девушке что всё получиолось,
+ но всё что вы видите это разбитый медальон,
+ вы пониматете что она тоже умерла потому что была дочерью барона и была напрямую связана с ним,
+ вы решаете поджчеь книгу, 
+как только она начинает гореть дом начинает падать,
+но вы успеваете выбежать из него, вы некогда не сможете забыть то что произошло в этот день....
+ 3 концовка"
+
+[node name="a new game" type="Button" parent="3Ending"]
+modulate = Color(1, 0.0509804, 0.0509804, 1)
+offset_left = -49.6792
+offset_top = 448.512
+offset_right = 50.3208
+offset_bottom = 479.512
+text = "Новая игра"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_fay0t")
+volume_db = -15.036
+autoplay = true
+
+[connection signal="pressed" from="3Ending/a new game" to="." method="_on_a_new_game_pressed"]

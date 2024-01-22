@@ -1,0 +1,33 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="The old gloomy house_s1"
+run/main_scene="res://main_menu/Main_Menu.tscn"
+config/features=PackedStringArray("4.1", "GL Compatibility")
+config/windows_native_icon="res://world2.ico"
+
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=1024
+window/size/window_width_override=500
+window/size/window_height_override=500
+window/energy_saving/keep_screen_on.editor=true
+window/stretch/mode="canvas_items"
+window/handheld/orientation=6
+window/vsync/vsync_mode=2
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

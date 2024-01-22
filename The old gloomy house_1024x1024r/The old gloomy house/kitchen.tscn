@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2afrewuybow5"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_oofva"]
+[ext_resource type="Texture2D" uid="uid://ccq5v5fe8e4pm" path="res://image/kitchen.jpg" id="2_mb1b7"]
+[ext_resource type="AudioStream" uid="uid://dwi64s4yr74p4" path="res://sounds and music/574107__mordiaudio__creature-rat-vocalizations.wav" id="3_xrp2p"]
+
+[node name="kitchen" type="CanvasLayer"]
+script = ExtResource("1_oofva")
+
+[node name="kitchen" type="Sprite2D" parent="."]
+position = Vector2(519.5, 510.5)
+scale = Vector2(1.02441, 1.0166)
+texture = ExtResource("2_mb1b7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="kitchen"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -787.386
+offset_top = -165.781
+offset_right = -217.386
+offset_bottom = 136.219
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="kitchen/VBoxContainer"]
+layout_mode = 2
+text = "Вы зашли на кухню и на вас тут же напала стая крыс,
+ но вам удалось отбиться взяв ножку разбитой тумбы стоящей рядом"
+
+[node name="house" type="Button" parent="kitchen"]
+modulate = Color(1, 0.109804, 0.109804, 1)
+offset_left = -98.4232
+offset_top = 406.871
+offset_right = 44.5771
+offset_bottom = 440.871
+text = "Вернуться назад"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_xrp2p")
+volume_db = -8.0
+autoplay = true
+
+[connection signal="pressed" from="kitchen/house" to="." method="_on_house_pressed"]

@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhel3njrv1rwx"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_plh43"]
+[ext_resource type="Texture2D" uid="uid://dfrkvbopa0v8c" path="res://image/cabinet.jpg" id="2_bap52"]
+[ext_resource type="AudioStream" uid="uid://dpn8clcwvnsym" path="res://sounds and music/718697__antenalosmusic__dead-silence.mp3" id="3_dv333"]
+
+[node name="cabinet" type="CanvasLayer"]
+script = ExtResource("1_plh43")
+
+[node name="Cabinet" type="Sprite2D" parent="."]
+position = Vector2(512.5, 514.5)
+scale = Vector2(1.02051, 1.02637)
+texture = ExtResource("2_bap52")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Cabinet"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -747.0
+offset_top = -129.0
+offset_right = -220.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Cabinet/VBoxContainer"]
+layout_mode = 2
+text = "Вы открыли тумбу и видите там книгу со странными надписями"
+
+[node name="house" type="Button" parent="Cabinet"]
+modulate = Color(1, 0.0392157, 0.0392157, 1)
+offset_left = -113.892
+offset_top = 413.423
+offset_right = 158.108
+offset_bottom = 444.423
+text = "Вы испугались и убежали назад"
+
+[node name="open_the_book" type="Button" parent="Cabinet"]
+modulate = Color(1, 0.0392157, 0.0392157, 1)
+offset_left = -62.5891
+offset_top = 453.658
+offset_right = 66.4109
+offset_bottom = 484.658
+text = "Открыть книгу"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_dv333")
+volume_db = -18.795
+autoplay = true
+
+[connection signal="pressed" from="Cabinet/house" to="." method="_on_house_pressed"]
+[connection signal="pressed" from="Cabinet/open_the_book" to="." method="_on_open_the_book_pressed"]

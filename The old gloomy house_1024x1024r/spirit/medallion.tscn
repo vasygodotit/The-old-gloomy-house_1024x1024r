@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://bo5hitjrohhrj"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_21kuo"]
+[ext_resource type="Texture2D" uid="uid://ccyf4m6qf1fy" path="res://image/medallion.jpg" id="2_t6c0x"]
+[ext_resource type="AudioStream" uid="uid://dpn8clcwvnsym" path="res://sounds and music/718697__antenalosmusic__dead-silence.mp3" id="3_0y4ql"]
+
+[node name="medallion" type="CanvasLayer"]
+script = ExtResource("1_21kuo")
+
+[node name="Medallion" type="Sprite2D" parent="."]
+position = Vector2(511, 512.5)
+scale = Vector2(1.02539, 1.02246)
+texture = ExtResource("2_t6c0x")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Medallion"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -906.159
+offset_top = -163.513
+offset_right = 229.841
+offset_bottom = -41.513
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Medallion/VBoxContainer"]
+layout_mode = 2
+text = "Вы заходите в комнату и видите странный медальон, который и издавал свечение синего цвета,
+ вы подходите к нему и берёте его в руки, 
+перед вами появляеться дух молодой девушки которая просит выслушать её"
+
+[node name="house" type="Button" parent="Medallion"]
+modulate = Color(1, 0.14902, 0.14902, 1)
+offset_left = -87.3652
+offset_top = 434.331
+offset_right = 59.6348
+offset_bottom = 465.331
+text = "Вернуться назад"
+
+[node name="sp" type="Button" parent="Medallion"]
+modulate = Color(1, 0.14902, 0.14902, 1)
+offset_left = -77.2063
+offset_top = 462.946
+offset_right = 44.7937
+offset_bottom = 501.946
+text = "Выслушать её"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_0y4ql")
+volume_db = -18.795
+autoplay = true
+
+[connection signal="pressed" from="Medallion/house" to="." method="_on_house_pressed"]
+[connection signal="pressed" from="Medallion/sp" to="." method="_on_sp_pressed"]
+[connection signal="pressed" from="Medallion/sp" to="." method="_on_spirit_pressed"]

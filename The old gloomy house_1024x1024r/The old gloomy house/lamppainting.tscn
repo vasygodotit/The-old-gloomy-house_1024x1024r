@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://g36kj3f2ixqb"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_b4tao"]
+[ext_resource type="Texture2D" uid="uid://b2ce7cycdyl1s" path="res://image/lamppainting.jpg" id="2_m86l7"]
+[ext_resource type="AudioStream" uid="uid://bv8lt4trjiobb" path="res://sounds and music/675765__craigsmith__s22-07-heavy-fire-crackle.wav" id="3_ptd1h"]
+
+[node name="lamppainting" type="CanvasLayer"]
+script = ExtResource("1_b4tao")
+
+[node name="Lamppainting" type="Sprite2D" parent="."]
+position = Vector2(513, 509)
+scale = Vector2(1.01172, 1.02148)
+texture = ExtResource("2_m86l7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Lamppainting"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1015.89
+offset_top = -106.924
+offset_right = 43.1109
+offset_bottom = -2.92365
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Lamppainting/VBoxContainer"]
+layout_mode = 2
+text = "Картина с бароном загорелась,
+ из неё вылетел дух барона, он горел,
+ и был в ярости,
+ но у вас есть время чтобы вернуться к входу"
+
+[node name="house" type="Button" parent="Lamppainting"]
+modulate = Color(1, 0.0117647, 0.0117647, 1)
+offset_left = -98.3446
+offset_top = 446.201
+offset_right = 52.6554
+offset_bottom = 477.201
+text = "Вернуться назад"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ptd1h")
+volume_db = -10.185
+autoplay = true
+
+[connection signal="pressed" from="Lamppainting/house" to="." method="_on_house_pressed"]

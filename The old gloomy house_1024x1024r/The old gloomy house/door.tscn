@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1x8k7fg12t47"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_pfrn5"]
+[ext_resource type="Texture2D" uid="uid://ca2ci1wh1omjo" path="res://image/door.jpg" id="2_x6tpv"]
+[ext_resource type="AudioStream" uid="uid://bm1suinil7tdl" path="res://sounds and music/254869__jacobmathiassen__male-crying-and-weeping.wav" id="3_gdw3t"]
+
+[node name="door" type="CanvasLayer"]
+script = ExtResource("1_pfrn5")
+
+[node name="Door" type="Sprite2D" parent="."]
+position = Vector2(513, 508.5)
+scale = Vector2(1.01562, 1.01855)
+texture = ExtResource("2_x6tpv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Door"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -790.0
+offset_top = -246.0
+offset_right = -172.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Door/VBoxContainer"]
+layout_mode = 2
+text = "Как только вы подошли к ней ваше зрение начало приходить в норму,
+ но вы чувствуете что кто-то стоит рядом, вы оборачиваетесь,
+ и видите перед собой барона котой своим мечом прокалывает вам живот,
+ вы падаете без сил,
+ увы но вы пополнили список слуг барона и стали одной из его картин,
+ одним из послушных рабов мёртвого барона.....
+ 2 концовка"
+
+[node name="world" type="Button" parent="Door"]
+modulate = Color(1, 0.101961, 0.101961, 1)
+offset_left = -43.3231
+offset_top = 456.038
+offset_right = 52.6769
+offset_bottom = 487.038
+text = "Вернуться"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_gdw3t")
+volume_db = -18.795
+autoplay = true
+
+[connection signal="pressed" from="Door/world" to="." method="_on_house_pressed"]
+[connection signal="pressed" from="Door/world" to="." method="_on_world_pressed"]

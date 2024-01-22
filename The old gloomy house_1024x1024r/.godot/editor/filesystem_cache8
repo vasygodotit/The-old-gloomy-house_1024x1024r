@@ -1,0 +1,50 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1705929109
+export_presets.cfg::TextFile::-1::1705928917::0::1::::<><>::
+icon.svg::CompressedTexture2D::2996605821157308516::1705846138::1705846153::1::::<><>::
+::res://image/::1705846177
+1 ending.jpg::CompressedTexture2D::6023688555882444331::1705775604::1705846176::1::::<><>::
+3 ending.jpg::CompressedTexture2D::4810699881504403426::1705775604::1705846177::1::::<><>::
+cabinet.jpg::CompressedTexture2D::7545945437521300064::1705775604::1705846176::1::::<><>::
+door.jpg::CompressedTexture2D::4828716687028746208::1705775604::1705846176::1::::<><>::
+hall2.jpg::CompressedTexture2D::7358028631777765612::1705775604::1705846176::1::::<><>::
+hall.jpg::CompressedTexture2D::8097078060432654092::1705775604::1705846176::1::::<><>::
+house.jpg::CompressedTexture2D::8864179288859358828::1705775604::1705846175::1::::<><>::
+kitchen.jpg::CompressedTexture2D::4948109693832778478::1705775604::1705846175::1::::<><>::
+lamppainting.jpg::CompressedTexture2D::4285948373021960546::1705775604::1705846175::1::::<><>::
+Main_Menu.jpg::CompressedTexture2D::282717601325861881::1705775604::1705846175::1::::<><>::
+medallion.jpg::CompressedTexture2D::145974122725017394::1705775604::1705846175::1::::<><>::
+open_the_book.jpg::CompressedTexture2D::6124745098687337411::1705775604::1705846174::1::::<><>::
+runhall.jpg::CompressedTexture2D::6994626839672394446::1705775604::1705846174::1::::<><>::
+spirit.jpg::CompressedTexture2D::8360319030794692559::1705775604::1705846174::1::::<><>::
+world.jpg::CompressedTexture2D::4322384625238828491::1705775604::1705846174::1::::<><>::
+::res://main_menu/::1705928382
+Main_Menu.tscn::PackedScene::7128786922766979297::1705928382::0::1::::<><>::res://skript/Body.gd<>uid://ea7k2eqwda1n::::res://image/Main_Menu.jpg
+::res://skript/::1705847953
+Body.gd::GDScript::-1::1705847953::0::1::::<>CanvasLayer<>::
+::res://sounds and music/::1705846180
+254869__jacobmathiassen__male-crying-and-weeping.wav::AudioStreamWAV::3283489691351659565::1416161092::1705846177::1::::<><>::
+405210__drotzruhn__woman-whispering.wav::AudioStreamWAV::1186623246940973407::1508431624::1705846177::1::::<><>::
+492599__omolemomakete__190304-omolemo-makete-running-and-gasping-male.wav::AudioStreamWAV::5687035819732093600::1573197560::1705846178::1::::<><>::
+574107__mordiaudio__creature-rat-vocalizations.wav::AudioStreamWAV::8721866639281586527::1705780726::1705846178::1::::<><>::
+675765__craigsmith__s22-07-heavy-fire-crackle.wav::AudioStreamWAV::3929214236293575819::1676607158::1705846177::1::::<><>::
+718697__antenalosmusic__dead-silence.mp3::AudioStreamMP3::8240939430676304508::1704859274::1705846173::1::::<><>::
+719496__audiocoffee__summer-every-day-loop.wav::AudioStreamWAV::5704986349066048832::1705464064::1705846180::1::::<><>::
+719620__davejf__quiet-music.mp3::AudioStreamMP3::8485655318329655114::1705796960::1705846173::1::::<><>::
+_readme_and_license.txt::TextFile::-1::1705796960::0::1::::<><>::
+::res://spirit/::1705925297
+3 ending.tscn::PackedScene::1307046825748623964::1705925288::0::1::::<><>::res://skript/Body.gd<>uid://caslr28aoplmg
+cabinet.tscn::PackedScene::2886718686833634247::1705925288::0::1::::<><>::res://skript/Body.gd<>uid://dfrkvbopa0v8c
+medallion.tscn::PackedScene::3431436145186239327::1705925288::0::1::::<><>::res://skript/Body.gd<>uid://ccyf4m6qf1fy
+open_the_book.tscn::PackedScene::2774274201102161681::1705925288::0::1::::<><>::res://skript/Body.gd<>uid://cti4wloleq0nf
+spirit.tscn::PackedScene::1963236375948762975::1705925297::0::1::::<><>::res://skript/Body.gd<>uid://drd2h6lau5s52
+::res://The old gloomy house/::1705928382
+1 ending.tscn::PackedScene::7550292442058138511::1705928382::0::1::::<><>::res://skript/Body.gd<>uid://cr26jgvrl2olv::::res://image/1 ending.jpg<>uid://cnjsj6fn88mii::::res://sounds and music/719496__audiocoffee__summer-every-day-loop.wav
+door.tscn::PackedScene::4260834514105328318::1705924854::0::1::::<><>::res://skript/Body.gd<>uid://ca2ci1wh1omjo
+hall2.tscn::PackedScene::1898750146320415130::1705924854::0::1::::<><>::res://skript/Body.gd<>uid://dc3jwk72koesi
+hall.tscn::PackedScene::4861890617337315035::1705928381::0::1::::<><>::res://skript/Body.gd<>uid://dnmjxsyhbm7jk::::res://image/hall.jpg<>uid://dpn8clcwvnsym::::res://sounds and music/718697__antenalosmusic__dead-silence.mp3
+house.tscn::PackedScene::1876473446708200238::1705924854::0::1::::<><>::res://skript/Body.gd<>uid://dyj40c6cmi21m
+kitchen.tscn::PackedScene::6668274334093226570::1705924854::0::1::::<><>::res://skript/Body.gd<>uid://ccq5v5fe8e4pm
+lamppainting.tscn::PackedScene::480836239884952077::1705924854::0::1::::<><>::res://skript/Body.gd<>uid://b2ce7cycdyl1s
+runhall.tscn::PackedScene::371295743772641394::1705927299::0::1::::<><>::res://skript/Body.gd<>uid://c6wiqnlkq3xek
+world.tscn::PackedScene::797665819209857622::1705925288::0::1::::<><>::res://skript/Body.gd<>uid://b2t2bqawo6h52

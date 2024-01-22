@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbjevmejllde6"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_4gxpa"]
+[ext_resource type="Texture2D" uid="uid://dnmjxsyhbm7jk" path="res://image/hall.jpg" id="2_6afve"]
+[ext_resource type="AudioStream" uid="uid://dpn8clcwvnsym" path="res://sounds and music/718697__antenalosmusic__dead-silence.mp3" id="3_wq5ju"]
+
+[node name="hall" type="CanvasLayer"]
+script = ExtResource("1_4gxpa")
+
+[node name="Hall" type="Sprite2D" parent="."]
+position = Vector2(512, 510.5)
+scale = Vector2(1.00781, 1.01074)
+texture = ExtResource("2_6afve")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Hall"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -633.189
+offset_top = -528.254
+offset_right = -59.1885
+offset_bottom = -398.254
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Hall/VBoxContainer"]
+layout_mode = 2
+text = "Вы прошли в зал и увидели 
+много картин по бокам,
+все люди изображённые на них
+ смотрели
+ в самый далний конец зала"
+clip_text = true
+
+[node name="ha" type="Button" parent="Hall"]
+modulate = Color(1, 0.141176, 0.141176, 1)
+offset_left = -85.49
+offset_top = 109.714
+offset_right = 90.51
+offset_bottom = 144.714
+text = "пройти в конец зала"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_wq5ju")
+volume_db = -18.795
+autoplay = true
+
+[connection signal="pressed" from="Hall/ha" to="." method="_on_hall_2_pressed"]
+[connection signal="pressed" from="Hall/ha" to="." method="_on_lamppainting_pressed"]
+[connection signal="pressed" from="Hall/ha" to="." method="_on_ha_pressed"]
+[connection signal="pressed" from="Hall/ha" to="." method="_on_go_to_the_end_of_the_hall_pressed"]

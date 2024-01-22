@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cnjsj6fn88mii"
+path="res://.godot/imported/719496__audiocoffee__summer-every-day-loop.wav-e03fb0bdac8cd07d50783232d74122fb.sample"
+
+[deps]
+
+source_file="res://sounds and music/719496__audiocoffee__summer-every-day-loop.wav"
+dest_files=["res://.godot/imported/719496__audiocoffee__summer-every-day-loop.wav-e03fb0bdac8cd07d50783232d74122fb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

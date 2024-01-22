@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://2b1ew7i5xj4e"]
+
+[ext_resource type="Script" path="res://skript/Body.gd" id="1_xb6hd"]
+[ext_resource type="Texture2D" uid="uid://dc3jwk72koesi" path="res://image/hall2.jpg" id="2_7mlm0"]
+[ext_resource type="AudioStream" uid="uid://dpn8clcwvnsym" path="res://sounds and music/718697__antenalosmusic__dead-silence.mp3" id="3_0b6tp"]
+
+[node name="hall2" type="CanvasLayer"]
+script = ExtResource("1_xb6hd")
+
+[node name="hall2" type="Sprite2D" parent="."]
+position = Vector2(512, 508.5)
+scale = Vector2(1.00586, 1.00098)
+texture = ExtResource("2_7mlm0")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="hall2"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -745.278
+offset_top = -222.169
+offset_right = -232.278
+offset_bottom = -100.17
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="Label" type="Label" parent="hall2/VBoxContainer"]
+layout_mode = 2
+text = "Вы прошли в конец зала и увидели портрет 
+красивого барона,
+ судя по всему жившего в этом доме,
+ но внезапно картина посмотрела на вас"
+metadata/_edit_lock_ = true
+
+[node name="runhall" type="Button" parent="hall2"]
+modulate = Color(1, 0.160784, 0.160784, 1)
+offset_left = -239.337
+offset_top = 408.994
+offset_right = 176.663
+offset_bottom = 439.994
+text = "Броситься бежать обратно к выходу сломя голову"
+metadata/_edit_lock_ = true
+
+[node name="lamppainting" type="Button" parent="hall2"]
+modulate = Color(1, 0.231373, 0.231373, 1)
+offset_left = -283.771
+offset_top = 441.31
+offset_right = 232.229
+offset_bottom = 483.31
+text = "Схватить масленую лампу стоящую рядом и кинуть в картину"
+metadata/_edit_lock_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_0b6tp")
+volume_db = -18.795
+autoplay = true
+
+[connection signal="pressed" from="hall2/runhall" to="." method="_on_runhall_pressed"]
+[connection signal="pressed" from="hall2/lamppainting" to="." method="_on_lamppainting_pressed"]

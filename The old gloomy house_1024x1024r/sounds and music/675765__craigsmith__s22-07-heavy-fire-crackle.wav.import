@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bv8lt4trjiobb"
+path="res://.godot/imported/675765__craigsmith__s22-07-heavy-fire-crackle.wav-9f79d896293432c4b28b1e0b1dc91485.sample"
+
+[deps]
+
+source_file="res://sounds and music/675765__craigsmith__s22-07-heavy-fire-crackle.wav"
+dest_files=["res://.godot/imported/675765__craigsmith__s22-07-heavy-fire-crackle.wav-9f79d896293432c4b28b1e0b1dc91485.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
