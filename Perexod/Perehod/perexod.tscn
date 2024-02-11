@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://tscdt4rj4gbf"]
+
+[ext_resource type="Script" path="res://Perehod/Area2D.gd" id="1_b7vlv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bx0i7"]
+radius = 39.2046
+
+[node name="Perexod" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_b7vlv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_bx0i7")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

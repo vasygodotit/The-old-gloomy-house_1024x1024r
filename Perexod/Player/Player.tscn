@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bcwummsscpavd"]
+
+[ext_resource type="Script" path="res://Player/Player.gd" id="1_jpg83"]
+[ext_resource type="Texture2D" uid="uid://had34u80h31h" path="res://Sprite-pingvin.png" id="2_1y6s1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jkuhy"]
+radius = 35.0
+height = 90.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_jpg83")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, -5)
+shape = SubResource("CapsuleShape2D_jkuhy")
+
+[node name="Sprite-pingvin" type="Sprite2D" parent="."]
+position = Vector2(43, -172)
+scale = Vector2(1, 0.956)
+texture = ExtResource("2_1y6s1")

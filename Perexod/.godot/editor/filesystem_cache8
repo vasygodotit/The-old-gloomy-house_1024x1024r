@@ -1,0 +1,13 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1707477846
+icon.svg::CompressedTexture2D::8163541152546128322::1707378858::1707378874::1::::<><>::
+Sprite-pingvin.png::CompressedTexture2D::491555614280191443::1707378889::1707378889::1::::<><>::
+::res://main_menu/::1707476993
+lvl.tscn::PackedScene::483004014937947711::1707476993::0::1::::<><>::uid://bcwummsscpavd::::res://Player/Player.tscn<>uid://tscdt4rj4gbf::::res://Perehod/perexod.tscn
+lvl_2.tscn::PackedScene::8448268805667867450::1707476993::0::1::::<><>::uid://bcwummsscpavd::::res://Player/Player.tscn
+::res://Perehod/::1707476993
+Area2D.gd::GDScript::-1::1707379776::0::1::::<>Area2D<>::
+perexod.tscn::PackedScene::1370874663591495703::1707476993::0::1::::<><>::res://Perehod/Area2D.gd
+::res://Player/::1707379810
+Player.gd::GDScript::-1::1707379488::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::2573451109848450725::1707379810::0::1::::<><>::res://Player/Player.gd<>uid://had34u80h31h::::res://Sprite-pingvin.png
